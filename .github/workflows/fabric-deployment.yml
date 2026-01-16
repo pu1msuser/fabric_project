@@ -8,10 +8,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  deploy-uat:
-    name: Deploy to UAT
+  deploy-test:
+    name: Deploy to Test
     runs-on: ubuntu-latest
-    environment: UAT
+    environment: Test
     
     steps:
       - name: Checkout repository
@@ -25,7 +25,7 @@ jobs:
       - name: Install dependencies
         run: pip install requests python-dotenv
           
-      - name: Deploy to UAT
+      - name: Deploy to Test
         run: python ./scripts/deploy_all.py
         env:
           TENANT_ID: ${{ secrets.FABRIC_TENANT_ID }}
@@ -38,7 +38,7 @@ jobs:
     name: Deploy to Production
     runs-on: ubuntu-latest
     environment: PROD
-    needs: deploy-uat
+    needs: deploy-test
     
     steps:
       - name: Checkout repository
