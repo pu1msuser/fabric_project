@@ -36,22 +36,13 @@
           "z": 2000.00
         },
         {
-          "config": "{\"name\":\"388160ed38deb025edbd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":884.4120707596254,\"y\":0,\"z\":2001,\"width\":186.47242455775236,\"height\":150.5098855359001,\"tabOrder\":2001}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Sum(FactSalesOrder.SalesTotal)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FactSalesOrder\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SalesTotal\"}},\"Function\":0},\"Name\":\"Sum(FactSalesOrder.SalesTotal)\",\"NativeReferenceName\":\"Sum of SalesTotal\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SalesTotal\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "config": "{\"name\":\"388160ed38deb025edbd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":884.4120707596254,\"y\":0,\"z\":3000,\"width\":186.47242455775236,\"height\":150.5098855359001,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Sum(FactSalesOrder.SalesTotal)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FactSalesOrder\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SalesTotal\"}},\"Function\":0},\"Name\":\"Sum(FactSalesOrder.SalesTotal)\",\"NativeReferenceName\":\"Sum of SalesTotal\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SalesTotal\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
           "filters": "[]",
           "height": 150.51,
           "width": 186.47,
           "x": 884.41,
           "y": 0.00,
-          "z": 2001.00
-        },
-        {
-          "config": "{\"name\":\"4bcbcc713a70e2053bd6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1070,\"y\":0,\"width\":150,\"height\":151,\"z\":2002,\"tabOrder\":2002}}],\"singleVisual\":{\"visualType\":\"cardVisual\",\"projections\":{\"Data\":[{\"queryRef\":\"Sum(FactSalesOrder.Quantity)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FactSalesOrder\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Quantity\"}},\"Function\":0},\"Name\":\"Sum(FactSalesOrder.Quantity)\",\"NativeReferenceName\":\"Sum of Quantity\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Quantity\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
-          "filters": "[]",
-          "height": 151.00,
-          "width": 150.00,
-          "x": 1070.00,
-          "y": 0.00,
-          "z": 2002.00
+          "z": 3000.00
         },
         {
           "config": "{\"name\":\"4ce7e9537066a6a52cbb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":611.3631633714881,\"y\":161.16545265348597,\"z\":1000,\"width\":590.0520291363164,\"height\":559.4172736732571,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DimCustomer.CountryRegion\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(FactSalesOrder.SalesTotal)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FactSalesOrder\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DimCustomer\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SalesTotal\"}},\"Function\":0},\"Name\":\"Sum(FactSalesOrder.SalesTotal)\",\"NativeReferenceName\":\"Sum of SalesTotal\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"CountryRegion\"},\"Name\":\"DimCustomer.CountryRegion\",\"NativeReferenceName\":\"CountryRegion\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SalesTotal\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
@@ -68,6 +59,27 @@
           "height": 719.68,
           "width": 591.16,
           "x": 10.28,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "fb4b50c109d674ec5056",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"c686dc4347ee5b6065e6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.655567117585848,\"y\":0,\"z\":0,\"width\":804.4953173777316,\"height\":435.54630593132157,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(FactSalesOrder.SalesTotal)\"}],\"Category\":[{\"queryRef\":\"DimDate.Month\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FactSalesOrder\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DimDate\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SalesTotal\"}},\"Function\":0},\"Name\":\"Sum(FactSalesOrder.SalesTotal)\",\"NativeReferenceName\":\"Sum of SalesTotal\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Month\"},\"Name\":\"DimDate.Month\",\"NativeReferenceName\":\"Sum of Month\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SalesTotal\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 435.55,
+          "width": 804.50,
+          "x": 10.66,
           "y": 0.00,
           "z": 0.00
         }
