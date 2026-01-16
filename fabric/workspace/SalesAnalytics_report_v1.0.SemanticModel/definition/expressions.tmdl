@@ -1,0 +1,24 @@
+/// Current Deployment environment (DEV, UAT, or PROD)
+expression Environment = "DEV" meta [IsParameterQuery=true, List={"DEV", "UAT", "PROD"}, DefaultValue=..., Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 42f96d05-46d5-42c9-925e-74446f415eed
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+/// Database server name based on env
+expression SrvName = "fab-dev-123.database.windows.net" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 5faf93f5-3c08-4b9a-9c2f-547263121cff
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+/// Database name based on env.
+expression DbName = "adventureworks-dev" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: d39ec9f2-fa09-4786-ad24-cc3537333f20
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
