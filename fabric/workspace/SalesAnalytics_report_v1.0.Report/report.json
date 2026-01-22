@@ -64,27 +64,6 @@
         }
       ],
       "width": 1280.00
-    },
-    {
-      "config": "{}",
-      "displayName": "Page 2",
-      "displayOption": 1,
-      "filters": "[]",
-      "height": 720.00,
-      "name": "fb4b50c109d674ec5056",
-      "ordinal": 1,
-      "visualContainers": [
-        {
-          "config": "{\"name\":\"c686dc4347ee5b6065e6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.655567117585848,\"y\":0,\"z\":0,\"width\":804.4953173777316,\"height\":435.54630593132157,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(FactSalesOrder.SalesTotal)\"}],\"Category\":[{\"queryRef\":\"DimDate.Month\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FactSalesOrder\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DimDate\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SalesTotal\"}},\"Function\":0},\"Name\":\"Sum(FactSalesOrder.SalesTotal)\",\"NativeReferenceName\":\"Sum of SalesTotal\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Month\"},\"Name\":\"DimDate.Month\",\"NativeReferenceName\":\"Sum of Month\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SalesTotal\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
-          "filters": "[]",
-          "height": 435.55,
-          "width": 804.50,
-          "x": 10.66,
-          "y": 0.00,
-          "z": 0.00
-        }
-      ],
-      "width": 1280.00
     }
   ]
 }
